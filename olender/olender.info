@@ -41,3 +41,6 @@ scripts[]= script.js
 
 scripts[]= script.responsive.js
 
+; Added code by Wickwood Marketing
+settings[olender_site_slogan_line_2]
+
