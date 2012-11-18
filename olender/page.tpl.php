@@ -22,9 +22,12 @@ $tabs2 = (isset($tabs2) && !(empty($tabs2))) ?'<ul class="arttabs_secondary">'.r
 <?php if (!empty($site_name)) : ?>
 <h1 class="art-headline" data-left="7.55%"><a href="<?php echo check_url($front_page); ?>" title = "<?php echo $site_name; ?>"><?php echo $site_name;  ?></a></h1><?php endif; ?>
 
-<?php if (!empty($site_slogan)) : ?>
-<h2 class="art-slogan" data-left="0%"><?php echo $site_slogan; ?>
-</h2><?php endif; ?>
+<?php if ( !empty($site_slogan) || t(theme_get_setting('olender_site_slogan_line_2')) != '' ) : ?>
+	<h2 class="art-slogan" data-left="0%">
+		<?php echo $site_slogan; ?><br />
+		<?php echo t(theme_get_setting('olender_site_slogan_line_2')); ?>
+	</h2>
+<?php endif; ?>
 
 
 <div class="art-textblock art-object924798578" data-left="92.7%">
@@ -124,11 +127,11 @@ $tabs2 = (isset($tabs2) && !(empty($tabs2))) ?'<ul class="arttabs_secondary">'.r
 <?php if (!empty($messages)) { echo $messages; } ?>
 <?php if (isset($action_links) && !empty($action_links)): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 <?php if ($art_post_position): ?>
-      </div>
-    </article>
-  <?php echo art_content_replace(render($content)); ?>
+</div>
+</article>
+<?php echo art_content_replace(render($content)); ?>
 <?php else: ?>
-  <?php echo art_content_replace(render($content)); ?>
+<?php echo art_content_replace(render($content)); ?>
 </div>
 </article>
 <?php endif; ?>
@@ -161,11 +164,9 @@ elseif (!empty($art_footer) && (trim($art_footer) != '')) { echo $art_footer; } 
 else { // HTML from Artisteer preview
 ob_start(); ?>
 
-<p><a href="#">Link1</a> | <a href="#">Link2</a> | <a href="#">Link3</a></p>
-<p>Copyright © 2012. All Rights Reserved.</p>
 <?php
-  $footer = str_replace('%YEAR%', date('Y'), ob_get_clean());
-  echo art_replace_image_path($footer);
+$footer = str_replace('%YEAR%', date('Y'), ob_get_clean());
+echo art_replace_image_path($footer);
 }
 ?>
 <?php if (!empty($copyright)) { echo '<div id="copyright">'.render($copyright).'</div>'; } ?>
@@ -173,7 +174,7 @@ ob_start(); ?>
 
     </div>
     <p class="art-page-footer">
-        <span id="art-footnote-links">Powered by <a href="http://drupal.org/">Drupal</a> and <a href="http://www.artisteer.com/?p=drupal_themes">Drupal Theme</a> created with Artisteer by <a target="_blank" href="http://www.WickwoodMarketing.com/themes">Wickwood Marketing</a>.</span>
+        <span id="art-footnote-links">Website designed and hosted by <a href="http://www.wickwoodmarketing.com/hosting">Wickwood Marketing</a>. Responsive theme created with <a href="http://click.linksynergy.com/fs-bin/click?id=MpGOWOmBK6s&offerid=173903.10000004&type=3&subid=0" rel="nofollow">Artisteer</a>.</span>
     </p>
 </div>
 

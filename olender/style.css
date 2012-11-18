@@ -1,3 +1,11 @@
+/* @override 
+	http://dev.om.wickwoodmarketing.com/sites/dev.om.wickwoodmarketing.com/themes/olender/style.css?mdnwtn
+	http://dev.om.wickwoodmarketing.com/sites/dev.om.wickwoodmarketing.com/themes/olender/style.css?mdp6md
+	http://dev.om.wickwoodmarketing.com/sites/dev.om.wickwoodmarketing.com/themes/olender/style.css?mdpbdp
+	http://dev.om.wickwoodmarketing.com/sites/dev.om.wickwoodmarketing.com/themes/olender/style.css?mdpc2k
+	http://dev.om.wickwoodmarketing.com/sites/dev.om.wickwoodmarketing.com/themes/olender/style.css?mdpew9
+*/
+
 /* Created by Artisteer v4.0.0.58475 */
 
 #art-main
@@ -423,6 +431,7 @@ text-align: left;
   display: inline-block;
   position: absolute;
   min-width: 50px;
+  max-width:690px;
   top: 31px;
   left: 7.55%;
   line-height: 100%;
@@ -457,8 +466,9 @@ text-shadow: 1.4px 1.4px 5px rgb(79, 79, 79);
   display: inline-block;
   position: absolute;
   min-width: 50px;
-  top: 123px;
-  left: 0%;
+  max-width:590px;
+  top: 110px;
+  left: 10.55%;
   line-height: 100%;
   margin-left: -1px !important;
   -webkit-transform: rotate(0deg);
@@ -467,7 +477,7 @@ text-shadow: 1.4px 1.4px 5px rgb(79, 79, 79);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   z-index: 99;
-  white-space: nowrap;
+  
 }
 
 .art-slogan, 
@@ -479,7 +489,7 @@ text-shadow: 1.4px 1.4px 5px rgb(79, 79, 79);
 font-size: 16px;
 font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 text-decoration: none;
-text-align: left;
+text-align: center;
   padding: 0;
   margin: 0;
   color: #022B55 !important;
@@ -2147,7 +2157,7 @@ blockquote p,
 .art-footer
 {
    border-top:1px dotted #82BEDE;
-   padding:25px;
+   padding: 0;
    margin:20px auto 0;
    position: relative;
    color: #000000;
@@ -2180,14 +2190,14 @@ blockquote p,
 .art-footer a,
 .art-footer a:link
 {
-   color: #62ADD5;
+   color: #4f90b2;
    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
 }
 
 .art-footer a:visited
 {
-   color: #00FFFF;
+   color: #4f90b2;
    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
 }
@@ -2269,7 +2279,7 @@ blockquote p,
    font-style: normal;
    font-weight: normal;
    text-decoration: underline;
-   color: #0675E5;
+   color: #4f90b2;
 }
 
 .art-page-footer
