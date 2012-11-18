@@ -3004,3 +3004,8 @@ a.contextual-links-trigger
   display: none;
 }
 /* End Drupal Search style */
+/* Styling added by WWM */
+.maintenance-page .art-postcontent 
+{
+  text-align: center;
+}
