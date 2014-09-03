@@ -1,46 +1,32 @@
-; $Id: olender.info $ 
-name = olender
-description = Artisteer-generated theme created specifically for Rich Olender.
+name = Olender
+description = Please provide a description for your theme.
+base theme = omega
 screenshot = screenshot.png
-version = 1.0
-core = 7.x
 engine = phptemplate
-regions[sidebar_left] =  Left sidebar
-regions[vnavigation_left] = Left vertical menu
-regions[sidebar_right] = Right sidebar
-regions[vnavigation_right] = Right vertical menu
+core = 7.x
 
-regions[art_header] = Header
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/olender.normalize.css
+stylesheets[all][] = css/olender.hacks.css
+stylesheets[all][] = css/olender.styles.css
+stylesheets[all][] = css/olender.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/olender.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
 regions[content] = Content
-regions[navigation] = Menu
-regions[banner1] = Banner 1
-regions[banner2] = Banner 2
-regions[banner3] = Banner 3
-regions[banner4] = Banner 4
-regions[banner5] = Banner 5
-regions[banner6] = Banner 6
-regions[user1] = User 1
-regions[user2] = User 2
-regions[user3] = User 3
-regions[user4] = User 4
-regions[extra1] = Extra 1
-regions[extra2] = Extra 2
-regions[copyright] = Copyright
-regions[top1] = Top 1
-regions[top2] = Top 2
-regions[top3] = Top 3
-regions[bottom1] = Bottom 1
-regions[bottom2] = Bottom 2
-regions[bottom3] = Bottom 3
-regions[footer_message] = Footer
-stylesheets[screen][]= style.css
-
-stylesheets[all][]= style.responsive.css
-
-scripts[]= script.js
-
-scripts[]= script.responsive.js
-
-; Added code by Wickwood Marketing
-settings[olender_site_slogan_line_2]
-
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
